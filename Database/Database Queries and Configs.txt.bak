@@ -1,0 +1,134 @@
+mysql username - root
+password - root
+
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 8.0.28 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> \s
+--------------
+C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe  Ver 8.0.28 for Win64 on x86_64 (MySQL Community Server - GPL)
+
+Connection id:          11
+Current database:
+Current user:           root@localhost
+SSL:                    Cipher in use is TLS_AES_256_GCM_SHA384
+Using delimiter:        ;
+Server version:         8.0.28 MySQL Community Server - GPL
+Protocol version:       10
+Connection:             localhost via TCP/IP
+Server characterset:    utf8mb4
+Db     characterset:    utf8mb4
+Client characterset:    cp850
+Conn.  characterset:    cp850
+TCP port:               3306
+Binary data as:         Hexadecimal
+Uptime:                 1 min 36 sec
+
+Threads: 2  Questions: 20  Slow queries: 0  Opens: 152  Flush tables: 3  Open tables: 68  Queries per second avg: 0.208
+--------------
+
+mysql> show databases
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.01 sec)
+
+mysql> create database test;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> us test
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'us test' at line 1
+mysql>
+
+Enter password: ****
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 100
+Server version: 8.0.28 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database book_api;
+Query OK, 1 row affected (0.02 sec)
+
+mysql>
+
+[
+    {
+        "id": 10,
+        "title": "Learn Angular",
+        "author": {
+            "authorId": 9,
+            "firstName": "Ajay",
+            "lastName": "Makde",
+            "language": "English"
+        }
+    }
+]
+
+
+create database car_api;
+
+
+******************************** AWS CLI Commands *****************************************
+
+906419543401
+Username - navin
+Password - Navinaws@12345
+Access Key ID - AKIA5GCWQTVURB4BTGG6
+Secret Access Key - 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
+
+aws --version
+
+Microsoft Windows [Version 10.0.19042.1645]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\navin.ajit.dhote>aws --version
+aws-cli/2.7.33 Python/3.9.11 Windows/10 exe/AMD64 prompt/off
+
+C:\Users\navin.ajit.dhote>aws configure
+AWS Access Key ID [None]: AKIA5GCWQTVURB4BTGG6
+AWS Secret Access Key [None]: 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
+Default region name [None]: eu-central-1
+Default output format [None]:
+
+C:\Users\navin.ajit.dhote>aws iam list-users
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "navin",
+            "UserId": "AIDA5GCWQTVUXD5QEDCX2",
+            "Arn": "arn:aws:iam::906419543401:user/navin",
+            "CreateDate": "2022-09-21T06:51:03+00:00",
+            "PasswordLastUsed": "2022-09-21T19:03:24+00:00"
+        }
+    ]
+}
+
+
+C:\Users\navin.ajit.dhote>
+
+
